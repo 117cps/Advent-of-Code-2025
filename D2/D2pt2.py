@@ -13,16 +13,13 @@ for i in r:
         l = len(numstr)
 
         for y in range(1,(l//2)+1):
-            if l != 2*y:
+            if l % y != 0:
                 continue
             segmentlist = re.findall(fr'.{{{y}}}', numstr)
             if len(set(segmentlist))==1:
-
                 total+=i
+                break
                 
             
-            
-
-
 print(total)
 
