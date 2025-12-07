@@ -7,8 +7,7 @@ total = 0
 with open(f"D6/{FNAME}.txt") as file:
     li = [[i for i in x if i!="" and i!="\n"] for x in [line for line in file.readlines()]]
 
-temp=[]
-    
+temp=[]  
 for c in range(0,len(li[0])):
     t=[]
     for r in range(0,len(li)):
@@ -32,6 +31,7 @@ for i in temp:
              opl.append(e)
     tn.append(n)
 prl.append(tn)    
+
 
 prl = [list(map(int, line)) for line in prl]
 
